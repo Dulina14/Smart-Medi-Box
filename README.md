@@ -1,7 +1,7 @@
 # Medibox Simulation for ESP32
 
 ## Project Overview
-This project is a comprehensive simulation of a **Medibox** implemented on the **ESP32** microcontroller using the **Wokwi** platform within **VS Code** via **PlatformIO**, enhanced with additional features as part of **EN2853: Embedded Systems and Applications Programming Assignments 1 and 2** at the University of Moratuwa. The Medibox is designed to assist users in managing their medication schedules effectively by providing timely reminders and maintaining optimal storage conditions for light- and temperature-sensitive medicines. The project was submitted in two phases: Assignment 1 on March 30, 2025, and Assignment 2 on May 18, 2025.
+This project is a comprehensive simulation of a **Medibox** implemented on the **ESP32** microcontroller using the **Wokwi** platform within **VS Code** via **PlatformIO**, enhanced with additional features as part of **EN2853: Embedded Systems and Applications Programming Assignments 1 and 2** at the University of Moratuwa. The Medibox is designed to assist users in managing their medication schedules effectively by providing timely reminders and maintaining optimal storage conditions for light- and temperature-sensitive medicines.
 
 ## Features
 The Medibox simulation encompasses the following functionalities, divided into two phases as per the assignments:
