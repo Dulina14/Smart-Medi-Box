@@ -50,13 +50,13 @@ The Medibox assists users in managing their medication schedules effectively by 
 
 3. **Servo-Controlled Shaded Window**  
    - A servo motor adjusts the window position to regulate light exposure based on light and temperature.  
-   - Angle \( \theta \) is calculated using the equation:
-     \[
-     \theta = \theta_{\text{offset}} + (180 - \theta_{\text{offset}}) \cdot I \cdot \gamma \cdot \ln\left(\frac{t_s}{t_u}\right) \cdot \frac{T}{T_{\text{med}}}
-     \]
-     where:
-     - \( I \) = normalized light intensity  
-     - \( T \) = measured ambient temperature  
+   - Angle (θ) is calculated using the equation:
+
+     `θ = θ_offset + (180 - θ_offset) × I × γ × ln(t_s / t_u) × (T / T_med)`
+
+     where:  
+     - `I` = normalized light intensity  
+     - `T` = measured ambient temperature  
      - All parameters are configurable via the dashboard
 
 4. **Temperature Integration**  
