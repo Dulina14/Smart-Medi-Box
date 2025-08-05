@@ -35,30 +35,34 @@ The Medibox assists users in managing their medication schedules effectively by 
 ### 🌟 Assignment 2: Enhanced Features
 
 1. **Light Intensity Monitoring**  
-   - LDR measures light every \( t_s \) seconds (default: 5s)  
-   - Averages readings over \( t_u \) (default: 2 mins)  
-   - Normalized (0–1) average sent via MQTT to Node-RED  
+   - Uses an LDR sensor to measure light intensity every \( t_s \) seconds (default: 5s).  
+   - Averages readings over a configurable interval \( t_u \) (default: 2 minutes).  
+   - Normalized average (range 0–1) is published to the Node-RED dashboard via MQTT (`test.mosquitto.org` broker).  
+   - Both \( t_s \) and \( t_u \) are adjustable using sliders in the dashboard.  
 
 2. **Node-RED Dashboard**  
-   - Displays current and historical light intensity  
-   - Sliders for:  
-     - Sampling Interval \( t_s \)  
-     - Sending Interval \( t_u \)  
-     - Minimum servo angle \( \theta_{\text{offset}} \)  
-     - Controlling factor \( \gamma \)  
-     - Ideal storage temperature \( T_{\text{med}} \)  
+   - Displays the most recent average light intensity numerically and as a time-series chart.  
+   - Group 1: Controls for light intensity monitoring (sampling and sending intervals).  
+   - Group 2: Controls for shaded window tuning:  
+     - **θₒₑₓₜ (Minimum Servo Angle)**: 0–120° (default: 30°)  
+     - **γ (Controlling Factor)**: 0–1 (default: 0.75)  
+     - **Tₘₑd (Ideal Storage Temperature)**: 10–40°C (default: 30°C)
 
 3. **Servo-Controlled Shaded Window**  
-   - Controls exposure via motorized servo window  
-   - Computes angle \( \theta \) with the formula:
+   - A servo motor adjusts the window position to regulate light exposure based on light and temperature.  
+   - Angle \( \theta \) is calculated using the equation:
      \[
      \theta = \theta_{\text{offset}} + (180 - \theta_{\text{offset}}) \cdot I \cdot \gamma \cdot \ln\left(\frac{t_s}{t_u}\right) \cdot \frac{T}{T_{\text{med}}}
      \]
+     where:
+     - \( I \) = normalized light intensity  
+     - \( T \) = measured ambient temperature  
+     - All parameters are configurable via the dashboard
 
 4. **Temperature Integration**  
-   - Real-time ambient temperature (DHT11) used in servo equation  
+   - Uses a DHT11 sensor to continuously monitor internal Medibox temperature.  
+   - Temperature value directly contributes to the shaded window angle calculation to maintain safe medicine storage conditions.
 
----
 
 ## 🛠️ Implementation Details
 
