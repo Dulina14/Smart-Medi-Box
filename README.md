@@ -100,35 +100,7 @@ The Medibox assists users in managing their medication schedules effectively by 
 
 ---
 
-## 📅 Submission Details
 
-### Assignment 1  
-- **Due**: March 30, 2025  
-- **Submission**: `.zip` with PlatformIO files + 5-min video walkthrough  
-
-### Assignment 2  
-- **Due**: May 18, 2025  
-- **Submission**: `.zip` (named with index number) including code, Node-RED flow, and a 5-min video walkthrough  
-
----
-
-## 🧮 Marks Allocation
-
-### Assignment 1 – 30%
-- NTP Time Sync: 20%  
-- Menu Navigation: 10%  
-- Alarm Handling (Set, Ring, Snooze): 40%  
-- Environmental Warnings: 10%  
-- Creativity & Neatness: 10%  
-
-### Assignment 2 – 20%
-- Sensor Readings & Data Transmission: 20%  
-- Node-RED Dashboard Setup: 20%  
-- Servo Control Logic: 25%  
-- Configurable Parameters via MQTT: 25%  
-- Creativity & Neatness: 10%
-
----
 
 ## 🙏 Acknowledgments
 
