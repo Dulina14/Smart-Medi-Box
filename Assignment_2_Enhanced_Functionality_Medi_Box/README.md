@@ -20,5 +20,5 @@ This separation improves clarity, supports easier debugging, and ensures better 
 
 ## 🎥 Demo Video
 
-Watch the project walkthrough on YouTube:  
-[👉 Click here to watch the Medibox demo](https://youtu.be/SeFirBLJ634)
+Watch the project walkthrough on Google Drive:  
+[👉 Click here to watch the Medibox demo](https://drive.google.com/file/d/14CjoMxTBObdF0vA2_TB-g7VAGHRjEUYb/view?usp=sharing)
