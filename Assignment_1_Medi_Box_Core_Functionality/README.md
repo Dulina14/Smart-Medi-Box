@@ -17,3 +17,8 @@ This separation improves clarity, supports easier debugging, and ensures better 
    ```ini
    src_dir = src
    include_dir = include
+
+## 🎥 Demo Video
+
+Watch the project walkthrough on YouTube:  
+[👉 Click here to watch the Medibox demo](https://youtu.be/SeFirBLJ634)
